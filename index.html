@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ClearSpace – Premium cleaning and pest control services in Australia." />
+    <title>ClearSpace | Premium Cleaning & Pest Control</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION (CodeStitch: Navigation - Sidekick)
+         Source: https://codestitch.app/app
+    ============================================================ -->
+    <header id="cs-navigation" role="banner">
+        <div class="cs-container">
+            <a href="index.html" class="cs-logo" aria-label="ClearSpace Home">
+                <span class="cs-logo-icon" aria-hidden="true">✦</span>
+                <span class="cs-logo-text">ClearSpace</span>
+            </a>
+            <nav class="cs-nav" role="navigation" aria-label="Main Navigation">
+                <ul class="cs-ul">
+                    <li class="cs-li"><a href="#hero" class="cs-li-link">Home</a></li>
+                    <li class="cs-li"><a href="#services" class="cs-li-link">Services</a></li>
+                    <li class="cs-li"><a href="#why-us" class="cs-li-link">Why Us</a></li>
+                    <li class="cs-li"><a href="#contact" class="cs-li-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cs-button-solid cs-nav-button">Get a Quote</a>
+            <button class="cs-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="cs-nav">
+                <span class="cs-hamburger-box" aria-hidden="true">
+                    <span class="cs-hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <!-- Mobile nav -->
+        <div class="cs-mobile-nav" id="cs-mobile-nav" aria-hidden="true">
+            <ul class="cs-mobile-ul">
+                <li><a href="#hero" class="cs-mobile-link">Home</a></li>
+                <li><a href="#services" class="cs-mobile-link">Services</a></li>
+                <li><a href="#why-us" class="cs-mobile-link">Why Us</a></li>
+                <li><a href="#contact" class="cs-mobile-link">Contact</a></li>
+                <li><a href="#contact" class="cs-button-solid">Get a Quote</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ============================================================
+             SECTION 1 — HERO (CodeStitch: Hero - Splash)
+             Source: https://codestitch.app/app
+        ============================================================ -->
+        <section id="hero" class="cs-hero" aria-label="Hero Section">
+            <div class="cs-hero-bg" aria-hidden="true">
+                <div class="cs-hero-overlay"></div>
+                <picture>
+                    <img
+                        src="images/hero-desktop.svg"
+                        alt=""
+                        role="presentation"
+                        loading="eager"
+                        decoding="async"
+                        class="cs-hero-img"
+                    />
+                </picture>
+            </div>
+            <div class="cs-container">
+                <div class="cs-hero-content">
+                    <p class="cs-hero-topper" aria-label="Tagline">Australia's Trusted Specialists</p>
+                    <h1 class="cs-hero-title">
+                        A Cleaner Space.<br />
+                        <em>A Better Life.</em>
+                    </h1>
+                    <p class="cs-hero-text">
+                        Professional cleaning and pest control solutions for homes, offices, and commercial spaces across Australia. We handle the mess — you enjoy the results.
+                    </p>
+                    <div class="cs-hero-buttons">
+                        <a href="#contact" class="cs-button-solid">Book a Service</a>
+                        <a href="#services" class="cs-button-transparent">Explore Services</a>
+                    </div>
+                    <div class="cs-hero-stats" aria-label="Key statistics">
+                        <div class="cs-stat">
+                            <span class="cs-stat-num" aria-label="15 plus years experience">15+</span>
+                            <span class="cs-stat-label">Years Experience</span>
+                        </div>
+                        <div class="cs-stat-divider" aria-hidden="true"></div>
+                        <div class="cs-stat">
+                            <span class="cs-stat-num" aria-label="5000 plus clients served">5,000+</span>
+                            <span class="cs-stat-label">Clients Served</span>
+                        </div>
+                        <div class="cs-stat-divider" aria-hidden="true"></div>
+                        <div class="cs-stat">
+                            <span class="cs-stat-num" aria-label="100 percent satisfaction guaranteed">100%</span>
+                            <span class="cs-stat-label">Satisfaction Guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 2 — SERVICES (CodeStitch: Services - Cards)
+             Source: https://codestitch.app/app
+        ============================================================ -->
+        <section id="services" class="cs-services" aria-labelledby="services-title">
+            <div class="cs-container">
+                <div class="cs-section-header">
+                    <p class="cs-topper">What We Offer</p>
+                    <h2 class="cs-title" id="services-title">Our Core Services</h2>
+                    <p class="cs-text">
+                        From regular office maintenance to one-off deep cleans and comprehensive pest management, ClearSpace delivers tailored solutions that meet Australian health and safety standards.
+                    </p>
+                </div>
+
+                <!-- Service Filter — JavaScript Feature -->
+                <div class="cs-filter" role="group" aria-label="Filter services by category">
+                    <button class="cs-filter-btn active" data-filter="all" aria-pressed="true">All Services</button>
+                    <button class="cs-filter-btn" data-filter="cleaning" aria-pressed="false">Cleaning</button>
+                    <button class="cs-filter-btn" data-filter="pest" aria-pressed="false">Pest Control</button>
+                    <button class="cs-filter-btn" data-filter="specialist" aria-pressed="false">Specialist</button>
+                </div>
+
+                <ul class="cs-card-group" aria-label="List of services">
+                    <!-- Cleaning Services -->
+                    <li class="cs-item" data-category="cleaning">
+                        <div class="cs-item-icon" aria-hidden="true">🏢</div>
+                        <h3 class="cs-item-title">Office Cleaning</h3>
+                        <p class="cs-item-text">Daily, weekly, or monthly commercial cleaning contracts for workplaces of all sizes. Fully insured teams, after-hours available.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Office Cleaning">Book Now →</a>
+                    </li>
+                    <li class="cs-item" data-category="cleaning">
+                        <div class="cs-item-icon" aria-hidden="true">🏠</div>
+                        <h3 class="cs-item-title">Home Deep Clean</h3>
+                        <p class="cs-item-text">Comprehensive residential cleaning including bathrooms, kitchens, and all living areas. Perfect for move-in, move-out, or seasonal refresh.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Home Deep Clean">Book Now →</a>
+                    </li>
+                    <li class="cs-item" data-category="cleaning">
+                        <div class="cs-item-icon" aria-hidden="true">🛋️</div>
+                        <h3 class="cs-item-title">Carpet & Sofa Cleaning</h3>
+                        <p class="cs-item-text">Hot-water extraction and dry-cleaning methods to restore carpets and upholstery. Eliminates allergens, stains, and odours effectively.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Carpet & Sofa Cleaning">Book Now →</a>
+                    </li>
+                    <li class="cs-item" data-category="specialist">
+                        <div class="cs-item-icon" aria-hidden="true">🏭</div>
+                        <h3 class="cs-item-title">Industrial & Factory</h3>
+                        <p class="cs-item-text">Heavy-duty industrial cleaning for factories, warehouses, and large commercial facilities. Compliant with WHS regulations.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Industrial Cleaning">Book Now →</a>
+                    </li>
+                    <!-- Pest Control Services -->
+                    <li class="cs-item" data-category="pest">
+                        <div class="cs-item-icon" aria-hidden="true">🪲</div>
+                        <h3 class="cs-item-title">Cockroach Control</h3>
+                        <p class="cs-item-text">Targeted gel baiting and spray treatments that eliminate cockroach infestations at source. Safe for children and pets when dry.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Cockroach Control">Book Now →</a>
+                    </li>
+                    <li class="cs-item" data-category="pest">
+                        <div class="cs-item-icon" aria-hidden="true">🐀</div>
+                        <h3 class="cs-item-title">Rodent Management</h3>
+                        <p class="cs-item-text">Integrated rodent control using tamper-resistant bait stations, trapping, and entry-point proofing to keep properties permanently rat-free.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Rodent Management">Book Now →</a>
+                    </li>
+                    <li class="cs-item" data-category="pest">
+                        <div class="cs-item-icon" aria-hidden="true">🦟</div>
+                        <h3 class="cs-item-title">Mosquito & Bed Bug</h3>
+                        <p class="cs-item-text">Residual insecticide treatments and heat methods to eradicate mosquitoes and bed bugs from homes and hotels. Guaranteed results.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Mosquito & Bed Bug Control">Book Now →</a>
+                    </li>
+                    <li class="cs-item" data-category="specialist">
+                        <div class="cs-item-icon" aria-hidden="true">🪟</div>
+                        <h3 class="cs-item-title">Glass & Window Cleaning</h3>
+                        <p class="cs-item-text">Streak-free commercial and residential window cleaning using pure water-fed pole systems and traditional squeegee methods for all heights.</p>
+                        <a href="#contact" class="cs-item-link" aria-label="Book Glass Cleaning">Book Now →</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 3 — WHY CHOOSE US (CodeStitch: Why Choose Us - SBS)
+             Source: https://codestitch.app/app
+        ============================================================ -->
+        <section id="why-us" class="cs-why" aria-labelledby="why-title">
+            <div class="cs-container cs-why-container">
+                <div class="cs-why-image-block" aria-hidden="true">
+                    <div class="cs-why-img-wrapper">
+                        <picture>
+                            <img
+                                src="images/team.svg"
+                                alt="ClearSpace professional cleaning team at work"
+                                loading="lazy"
+                                decoding="async"
+                                width="600"
+                                height="700"
+                                class="cs-why-img"
+                            />
+                        </picture>
+                        <div class="cs-badge" aria-label="Award: Best Cleaning Company 2024">
+                            <span class="cs-badge-icon" aria-hidden="true">🏆</span>
+                            <span class="cs-badge-text">Best Cleaning Company<br /><strong>2024</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-why-content">
+                    <p class="cs-topper">Why ClearSpace?</p>
+                    <h2 class="cs-title" id="why-title">Trusted by Thousands of Australian Homes & Businesses</h2>
+                    <p class="cs-text">
+                        We're not just a cleaning company — we're your long-term partner in maintaining healthy, hygienic environments. Our fully trained, background-checked team uses eco-friendly, hospital-grade products approved by the Australian Pesticides and Veterinary Medicines Authority (APVMA).
+                    </p>
+                    <ul class="cs-why-list">
+                        <li class="cs-why-item">
+                            <div class="cs-why-icon" aria-hidden="true">✅</div>
+                            <div>
+                                <h3 class="cs-why-item-title">Certified & Insured</h3>
+                                <p class="cs-why-item-text">All staff are police-checked and hold relevant Australian certifications. We carry full public liability insurance for your peace of mind.</p>
+                            </div>
+                        </li>
+                        <li class="cs-why-item">
+                            <div class="cs-why-icon" aria-hidden="true">🌿</div>
+                            <div>
+                                <h3 class="cs-why-item-title">Eco-Friendly Products</h3>
+                                <p class="cs-why-item-text">We use biodegradable, non-toxic cleaning agents that are safe for your family, pets, and the environment — without compromising results.</p>
+                            </div>
+                        </li>
+                        <li class="cs-why-item">
+                            <div class="cs-why-icon" aria-hidden="true">⚡</div>
+                            <div>
+                                <h3 class="cs-why-item-title">Fast Response</h3>
+                                <p class="cs-why-item-text">Same-day and next-day bookings available. Emergency pest treatments dispatched within hours of your call.</p>
+                            </div>
+                        </li>
+                        <li class="cs-why-item">
+                            <div class="cs-why-icon" aria-hidden="true">💯</div>
+                            <div>
+                                <h3 class="cs-why-item-title">Satisfaction Guarantee</h3>
+                                <p class="cs-why-item-text">Not happy with the results? We'll come back and re-clean for free. No questions asked — your satisfaction is our guarantee.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 4 — CONTACT / QUOTE FORM (CodeStitch: Contact - Form)
+             Source: https://codestitch.app/app
+        ============================================================ -->
+        <section id="contact" class="cs-contact" aria-labelledby="contact-title">
+            <div class="cs-container cs-contact-container">
+                <div class="cs-contact-info">
+                    <p class="cs-topper">Get In Touch</p>
+                    <h2 class="cs-title" id="contact-title">Get Your Free Quote Today</h2>
+                    <p class="cs-text">
+                        Ready for a cleaner space? Fill out the form and our friendly team will get back to you within 2 business hours with a tailored, no-obligation quote.
+                    </p>
+                    <ul class="cs-contact-details">
+                        <li class="cs-contact-item">
+                            <span class="cs-contact-icon" aria-hidden="true">📞</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:+61412345678" aria-label="Call ClearSpace at 0412 345 678">0412 345 678</a></p>
+                            </div>
+                        </li>
+                        <li class="cs-contact-item">
+                            <span class="cs-contact-icon" aria-hidden="true">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p><a href="mailto:hello@clearspaceaus.com.au" aria-label="Email ClearSpace">hello@clearspaceaus.com.au</a></p>
+                            </div>
+                        </li>
+                        <li class="cs-contact-item">
+                            <span class="cs-contact-icon" aria-hidden="true">📍</span>
+                            <div>
+                                <strong>Service Area</strong>
+                                <p>Melbourne, Sydney & surrounding suburbs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cs-contact-form-wrapper">
+                    <div class="cs-form-card" role="form" aria-label="Quote Request Form">
+                        <h3 class="cs-form-title">Request a Free Quote</h3>
+                        <div class="cs-form-group">
+                            <label for="name" class="cs-form-label">Full Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" class="cs-form-input" placeholder="Jane Smith" required aria-required="true" autocomplete="name" />
+                        </div>
+                        <div class="cs-form-group">
+                            <label for="email" class="cs-form-label">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" class="cs-form-input" placeholder="jane@example.com" required aria-required="true" autocomplete="email" />
+                        </div>
+                        <div class="cs-form-group">
+                            <label for="phone" class="cs-form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="cs-form-input" placeholder="04XX XXX XXX" autocomplete="tel" />
+                        </div>
+                        <div class="cs-form-group">
+                            <label for="service" class="cs-form-label">Service Required <span aria-hidden="true">*</span></label>
+                            <select id="service" name="service" class="cs-form-input cs-form-select" required aria-required="true">
+                                <option value="" disabled selected>Select a service…</option>
+                                <option value="office">Office Cleaning</option>
+                                <option value="home">Home Deep Clean</option>
+                                <option value="carpet">Carpet &amp; Sofa Cleaning</option>
+                                <option value="pest">Pest Control</option>
+                                <option value="industrial">Industrial Cleaning</option>
+                                <option value="glass">Glass &amp; Window Cleaning</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="cs-form-group">
+                            <label for="message" class="cs-form-label">Additional Details</label>
+                            <textarea id="message" name="message" class="cs-form-input cs-form-textarea" placeholder="Tell us about your property and specific needs…" rows="4" aria-label="Additional details about your cleaning needs"></textarea>
+                        </div>
+                        <button type="button" class="cs-button-solid cs-form-submit" id="submit-btn" aria-label="Submit quote request form">
+                            Send My Quote Request
+                        </button>
+                        <div class="cs-form-success" id="form-success" role="alert" aria-live="polite" aria-hidden="true">
+                            <span class="cs-success-icon" aria-hidden="true">🎉</span>
+                            <strong>Thank you!</strong> Your quote request has been received. We'll be in touch within 2 business hours.
+                        </div>
+                        <p class="cs-form-privacy">Your details are safe with us. We never share your information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER (CodeStitch: Footer - Dark)
+         Source: https://codestitch.app/app
+    ============================================================ -->
+    <footer id="footer" role="contentinfo">
+        <div class="cs-container cs-footer-container">
+            <div class="cs-footer-brand">
+                <a href="index.html" class="cs-logo" aria-label="ClearSpace Home">
+                    <span class="cs-logo-icon" aria-hidden="true">✦</span>
+                    <span class="cs-logo-text cs-logo-text-light">ClearSpace</span>
+                </a>
+                <p class="cs-footer-tagline">Australia's trusted cleaning and pest control specialists since 2009.</p>
+                <div class="cs-social-links" aria-label="ClearSpace social media links">
+                    <a href="#" class="cs-social" aria-label="ClearSpace on Facebook">f</a>
+                    <a href="#" class="cs-social" aria-label="ClearSpace on Instagram">ig</a>
+                    <a href="#" class="cs-social" aria-label="ClearSpace on LinkedIn">in</a>
+                </div>
+            </div>
+            <nav class="cs-footer-nav" aria-label="Footer navigation">
+                <h3 class="cs-footer-nav-title">Services</h3>
+                <ul class="cs-footer-ul">
+                    <li><a href="#services">Office Cleaning</a></li>
+                    <li><a href="#services">Home Deep Clean</a></li>
+                    <li><a href="#services">Carpet & Sofa</a></li>
+                    <li><a href="#services">Pest Control</a></li>
+                    <li><a href="#services">Industrial Cleaning</a></li>
+                </ul>
+            </nav>
+            <nav class="cs-footer-nav" aria-label="Company navigation">
+                <h3 class="cs-footer-nav-title">Company</h3>
+                <ul class="cs-footer-ul">
+                    <li><a href="#why-us">About Us</a></li>
+                    <li><a href="#contact">Get a Quote</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <div class="cs-footer-contact">
+                <h3 class="cs-footer-nav-title">Contact Us</h3>
+                <p><a href="tel:+61412345678">0412 345 678</a></p>
+                <p><a href="mailto:hello@clearspaceaus.com.au">hello@clearspaceaus.com.au</a></p>
+                <p>Melbourne &amp; Sydney, Australia</p>
+            </div>
+        </div>
+        <div class="cs-footer-bottom">
+            <p>© 2025 ClearSpace Australia Pty Ltd. All rights reserved. <em>All business details are fictional and created for academic purposes.</em></p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

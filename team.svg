@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700">
+  <defs>
+    <linearGradient id="teamBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B4332"/>
+      <stop offset="60%" style="stop-color:#2D6A4F"/>
+      <stop offset="100%" style="stop-color:#52B788"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#52B788;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#1B4332;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#teamBg)" rx="16"/>
+  <rect width="600" height="700" fill="url(#light)" rx="16"/>
+  <!-- Person 1 -->
+  <circle cx="200" cy="210" r="65" fill="rgba(255,255,255,0.18)"/>
+  <ellipse cx="200" cy="380" rx="75" ry="100" fill="rgba(255,255,255,0.12)"/>
+  <!-- Person 2 -->
+  <circle cx="400" cy="230" r="55" fill="rgba(255,255,255,0.14)"/>
+  <ellipse cx="400" cy="390" rx="65" ry="90" fill="rgba(255,255,255,0.09)"/>
+  <!-- Uniform badges -->
+  <rect x="160" y="340" width="80" height="48" rx="8" fill="rgba(82,183,136,0.5)"/>
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">CS</text>
+  <rect x="362" y="358" width="76" height="44" rx="8" fill="rgba(82,183,136,0.4)"/>
+  <text x="400" y="386" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">CS</text>
+  <!-- Cleaning equipment -->
+  <line x1="130" y1="480" x2="150" y2="580" stroke="rgba(255,255,255,0.2)" stroke-width="6" stroke-linecap="round"/>
+  <rect x="120" y="570" width="40" height="20" rx="4" fill="rgba(255,255,255,0.15)"/>
+  <!-- Floor line -->
+  <line x1="60" y1="500" x2="540" y2="500" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- Text labels -->
+  <text x="300" y="560" font-family="Georgia, serif" font-size="20" fill="rgba(255,255,255,0.6)" text-anchor="middle">ClearSpace Team</text>
+  <text x="300" y="590" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.35)" text-anchor="middle">Certified · Insured · Professional</text>
+  <!-- Decorative stars -->
+  <text x="80" y="120" font-size="20" fill="rgba(212,168,83,0.4)">★★★★★</text>
+  <text x="400" y="120" font-size="14" fill="rgba(255,255,255,0.2)" font-family="Arial">5.0 Rating</text>
+</svg>
